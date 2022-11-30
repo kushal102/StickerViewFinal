@@ -9,6 +9,7 @@ import android.text.Layout;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -63,29 +64,21 @@ public class MainActivity extends AppCompatActivity {
             BitmapStickerIcon.RIGHT_TOP);
     flipIcon.setIconEvent(new FlipHorizontallyEvent());
 
-    BitmapStickerIcon heartIcon =
-            new BitmapStickerIcon(ContextCompat.getDrawable(this,
-                    R.drawable.ic_favorite_white_24dp),
-                    BitmapStickerIcon.LEFT_BOTTOM);
-//    heartIcon.setIconEvent(new HelloIconEvent());
 
-    stickerView.setIcons(Arrays.asList(deleteIcon, zoomIcon, flipIcon, heartIcon));
-
-    //default icon layout
-    //stickerView.configDefaultIcons();
+    stickerView.setIcons(Arrays.asList(deleteIcon, zoomIcon, flipIcon));
 
     stickerView.setBackgroundColor(Color.WHITE);
     stickerView.setLocked(false);
     stickerView.setConstrained(true);
 
-    sticker = new TextSticker(this);
-
-    sticker.setDrawable(ContextCompat.getDrawable(getApplicationContext(),
-            R.drawable.sticker_transparent_background));
-    sticker.setText("Hello, world!");
-    sticker.setTextColor(Color.BLACK);
-    sticker.setTextAlign(Layout.Alignment.ALIGN_CENTER);
-    sticker.resizeText();
+//    sticker = new TextSticker(this);
+//
+//    sticker.setDrawable(ContextCompat.getDrawable(getApplicationContext(),
+//            R.drawable.sticker_transparent_background));
+//    sticker.setText("Hello, world!");
+//    sticker.setTextColor(Color.BLACK);
+//    sticker.setTextAlign(Layout.Alignment.ALIGN_CENTER);
+//    sticker.resizeText();
 
     stickerView.setOnStickerOperationListener(new StickerView.OnStickerOperationListener() {
       @Override
@@ -185,7 +178,10 @@ public class MainActivity extends AppCompatActivity {
                     .setText("Sticker\n")
                     .setMaxTextSize(14)
                     .resizeText()
+                    .setLineSpacing(1,0)  
             , Sticker.Position.TOP);
+
+
   }
 
   @Override

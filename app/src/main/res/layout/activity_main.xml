@@ -54,6 +54,7 @@
           android:background="?attr/selectableItemBackground"
           android:onClick="reset"
           android:text="Reset"
+          android:textColor="@color/white"
           />
 
       <Button
@@ -62,6 +63,7 @@
           android:background="?attr/selectableItemBackground"
           android:onClick="testReplace"
           android:text="Replace"
+          android:textColor="@color/white"
           />
 
       <Button
@@ -70,6 +72,7 @@
           android:background="?attr/selectableItemBackground"
           android:onClick="testRemove"
           android:text="Remove"
+          android:textColor="@color/white"
           />
 
       <Button
@@ -78,6 +81,7 @@
           android:background="?attr/selectableItemBackground"
           android:onClick="testRemoveAll"
           android:text="RemoveAll"
+          android:textColor="@color/white"
           />
 
       <Button
@@ -86,6 +90,7 @@
           android:background="?attr/selectableItemBackground"
           android:onClick="testLock"
           android:text="Lock"
+          android:textColor="@color/white"
           />
 
       <Button
@@ -94,6 +99,7 @@
           android:background="?attr/selectableItemBackground"
           android:onClick="testAdd"
           android:text="Add"
+          android:textColor="@color/white"
           />
 
     </LinearLayout>

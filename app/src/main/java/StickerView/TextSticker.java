@@ -57,7 +57,7 @@ public class TextSticker extends Sticker {
    */
   private float minTextSizePixels;
 
-  /**
+   /**
    * Line spacing multiplier.
    */
   private float lineSpacingMultiplier = 1.0f;
